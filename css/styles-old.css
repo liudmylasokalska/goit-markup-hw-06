@@ -5,9 +5,6 @@
 /*#region main section*/
 /*#endregion main section*/
 /* #region describe*/
-.descr {
-    padding: 120px 0;
-}
 
 .icons-descr {
 border: 1px solid #8e8f99;
@@ -41,22 +38,6 @@ margin-bottom: 8px;}
     display: flex;
     gap: 24px;
   }
-
-.describe-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-.describe-p {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
 /* #endregion desribe*/
 /* #region team */
 .main-team-section {
