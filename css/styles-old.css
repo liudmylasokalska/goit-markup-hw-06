@@ -5,39 +5,6 @@
 /*#region main section*/
 /*#endregion main section*/
 /* #region describe*/
-
-.icons-descr {
-border: 1px solid #8e8f99;
-border-radius: 4px;
-width: 264px;
-height: 112px;
-background-color: #f4f4fd;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 8px;}
-
-.title-descr, .visually-hidden {
-    position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
-
-.describe-section {
-    width: calc((100% - 24px*3)/4);
-}
-
-.describe-list {
-    display: flex;
-    gap: 24px;
-  }
 /* #endregion desribe*/
 /* #region team */
 .main-team-section {

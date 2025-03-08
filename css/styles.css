@@ -298,7 +298,8 @@ ol {
 
     .mobile-menu-social-link-list {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: center;
     }
 
     .mobile-menu-items-link:hover,
@@ -363,7 +364,7 @@ ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 210px;
+    max-width: 216px;
     margin: 0 auto 72px;
 }
 .button-order {
@@ -396,9 +397,9 @@ ol {
     url(../images/hero-tab.jpg);
     max-width: 768px;
     }
-.main-title {
+.main-title { 
     font-size: 56px;
-    line-height: 1.01;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
     margin: 0 auto 36px;
@@ -432,6 +433,10 @@ ol {
 .describe-section {
     width: 100%;
 }
+.icons-descr,
+.icons-descr-svg {
+    display: none;
+}
 .describe-title {
     font-weight: 700;
     font-size: 36px;
@@ -445,10 +450,7 @@ ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.icons-descr, .icons-descr-svg{
-    display: none;
+    color: #434455;
 }
 
 @media screen and (min-width: 768px) {
@@ -459,16 +461,15 @@ ol {
 
 
 @media screen and (min-width: 1158px) {
+.container {width: 1158px;}
+.describe-list {gap: 72px 24px;}
+.describe-section {width: calc((100% - 73px) / 4);
+    flex-wrap: nowrap;
+}
 .descr {
 padding: 120px 0;
 }
-.discribe-list {
-    display: flex;
-    gap: 24px;
-}
-.describe-section {
-    width: calc((100% - 24px*3)/4);
-}
+
 .describe-title {
 font-weight: 500;
 font-size: 20px;
@@ -476,18 +477,101 @@ margin-bottom: 8px;
 }
 
 .describe-p {
-    font-weight: 400;
-    }
+font-weight: 400;
+}
+.icons-descr-svg {
+position: relative;
+display: grid;
+}
 .icons-descr {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background-color: #f4f4fd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #8e8f99;
+border-radius: 4px;
+width: 264px;
+height: 112px;
+background-color: #f4f4fd;
+margin-bottom: 8px;
 }
 }
 /* #endregion describe */
+/* #region team */
+.main-team-section .container {
+    padding: 0 28px;}
+.main-team-section {
+    background-color: #F4F4FD;
+}
+.team-section {
+    width: calc ((100% - 72px) / 4);
+    background-color: #FFF;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.class-title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    justify-content: center;
+    }
+
+.team-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);}
+
+
+.team-section {
+    width: 100%;
+}
+
+.team-img {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+.team-name-position {
+    padding: 32px 0;
+
+}
+
+.image-team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    }
+
+.team-position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #434455;
+    }
+.social-link-list.mobile-menu-social-link-list {
+    gap: 24px;
+    padding: 0 16px;
+}
+@media screen and (min-width: 768px) {
+    .team-section { width: calc((100% - 24px)/2);}
+    .team-ul {flex-direction: raw;
+    flex-wrap: wrap;
+    gap:64px 24px;}
+.main-team-section.container{
+    padding: 0 108px;
+}
+}
+@media screen and (min-width: 1158px)
+/* #endregion team */
