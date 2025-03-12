@@ -448,6 +448,8 @@ border: none;
  }
 
  .label-checkbox {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     font-size: 12px;
     line-height: 1.17;
@@ -458,6 +460,7 @@ border: none;
  .label-checkbox a{
     text-decoration: underline;
     color: #4d5ae5;
+    line-height: 133%;
  }
 
 .checkbox:checked + .label-checkbox .custom-checkbox {
